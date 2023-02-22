@@ -3,7 +3,7 @@ class PrefixedReminder:
     Classes that subclass it should override the `self.text` property
     """
     def __init__(self, prefix="Hey, don't forget to "):
-        self.prefix = prefix
+        self.prefix = prefix.text
         self.text = prefix + '<placeholder_text>'
     
 class PoliteReminder(PrefixedReminder):
